@@ -12,16 +12,18 @@ Uso de atributos e elementos para estruturar o conteúdo.
 
 CSS Básico:
 
-Seletores CSS para estilizar elementos HTML.
-Estilização de textos, cores, fundos e bordas.
+Seletores CSS para estilizar elementos HTML,
+Estilização de textos, cores, fundos e bordas
 Utilização de classes e IDs para aplicar estilos específicos.
 
 JavaScript Essencial:
-Introdução aos conceitos fundamentais do JavaScript.
-Manipulação do DOM para interagir dinamicamente com a página.
+
+Introdução aos conceitos fundamentais do JavaScript,
+Manipulação do DOM para interagir dinamicamente com a página,
 Eventos e listeners para responder às interações do usuário.
 
 Estrutura do Projeto:
+
 index.html: Página principal do projeto, contendo a estrutura HTML básica.
 style.css: Arquivo de estilos CSS para personalizar a aparência da página.
 script.js: Arquivo JavaScript para adicionar interatividade à página.
