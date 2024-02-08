@@ -6,8 +6,8 @@ Tópicos Abordados:
 
 HTML Fundamentos:
 
-Estrutura básica do HTML.
-Tags semânticas para melhorar a acessibilidade e SEO.
+Estrutura básica do HTML,
+Tags semânticas para melhorar a acessibilidade e SEO,
 Uso de atributos e elementos para estruturar o conteúdo.
 
 CSS Básico:
