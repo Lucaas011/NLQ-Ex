@@ -37,3 +37,5 @@ Explore o código-fonte nos arquivos HTML, CSS e JavaScript para entender os con
 
 Conclusão:
 Este projeto proporcionou uma introdução sólida aos fundamentos de CSS, JavaScript e HTML. Ao aplicar esses conceitos em um projeto prático, pude consolidar meu entendimento e estar mais preparado para avançar para tópicos mais avançados no desenvolvimento web.
+
+Segue projeto : https://lucaas011.github.io/Nlw-Expert/
