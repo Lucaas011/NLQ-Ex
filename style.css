@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+/* Define o estilo padrão para todas as tags (*) e para a raiz (:root) do documento */
+*, :root {
+    margin: 0; /* Remove as margens padrão */
+    padding: 0; /* Remove o preenchimento padrão */
+    box-sizing: border-box; /* Faz com que a largura e altura incluam o preenchimento e a borda, mas não a margem */
+
+    font-family: inter, sans-serif; /* Define a fonte padrão para o documento */
+    font-synthesis: none; /* Desativa a síntese de fonte, mantendo a consistência da fonte */
+    text-rendering: optimizeLegibility; /* Otimiza a renderização do texto para legibilidade */
+    -webkit-font-smoothing: antialiased; /* Aplica suavização antialiasing em fontes no Safari e Chrome */
+    -moz-osx-font-smoothing: grayscale; /* Aplica suavização em fontes no Firefox no macOS */
+    -webkit-text-size-adjust:100% /* Garante que o tamanho do texto não seja ajustado automaticamente pelo navegador */
+}
+
+body {
+    background-color: #0F172A;
+}
+
+main{
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 640px;
+}
+
+header {
+    margin-top: 64px;
+    padding-bottom: 24px; /* Adiciona um preenchimento na parte inferior do elemento de 24 pixels */
+    border-bottom: 1px solid #334155; /* Adiciona uma borda na parte inferior do elemento com espessura de 1 pixel e cor sólida #334155 */
+}
+
+header h1 {
+    margin-top: 24px;
+    font-size: 30px;
+    color: #F1F5F9;
+}
+
+#quiz {
+    counter-reset: quiz-item; /* Reinicia o contador chamado 'quiz-item' */
+}
+
+.quiz-item {
+    margin-top: 24px;
+    border: 1px solid #475569;
+    border-radius: 6px;
+    overflow: hidden ; /* Define o comportamento de overflow do elemento como oculto, escondendo o conteúdo que excede seus limites */
+}
+
+.quiz-item h3 {
+    padding: 16px 20px;
+    color: #E2E8F0;
+    display: flex;
+    align-items: center;
+    gap: 12px; /* Define o espaçamento entre os itens filho do elemento como 12 pixels */
+    background-color: #1E293B;
+}
+
+.quiz-item h3::before{
+    counter-increment: quiz-item; /* Incrementa o contador chamado 'quiz-item' */
+    content: counter(quiz-item); /* Define o conteúdo do elemento como o valor atual do contador 'quiz-item' */
+    background-color: #475569;
+    width: 28px;
+    height: 28px;
+    font-size: 12px;
+    border-radius: 50%; /* Define um raio de borda de 50%, transformando o elemento em um círculo */
+    display: flex; /* Define o elemento como um contêiner flexível */
+    align-items: center;
+    justify-content: center;
+}
+
+.quiz-item dl {
+    padding: 20px 24px; /* Define um preenchimento de 20 pixels na parte superior e inferior e 24 pixels nos lados esquerdo e direito */
+    display: grid; /* Define o elemento como um contêiner de layout de grade */
+    gap: 8px;
+}
+
+.quiz-item dl dt {
+    font-size: 14px;
+    line-height: 24px; /* Define a altura da linha como 24 pixels */
+    letter-spacing: 0; /* Define o espaçamento entre letras como 0 */
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #E2E8F0;
+}
+
+input {
+    all: unset;
+    border: 1px solid #94a3b8;
+    width: 16px;
+    height: 16px;
+
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input:checked{
+    border: 1px solid #A3E635;
+}
+
+input:checked:before{ /* Estiliza um pseudo-elemento ::before de um input do tipo "checked" */
+    content: ""; /* Define o conteúdo do elemento como uma string vazia */
+    width: 10px;
+    height: 10px;
+    background-color: #A3E635;
+    border-radius: 50%;
+}
+
+#acertos{
+    text-align: center;
+    background-color: #A3E635;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 0px;
+}

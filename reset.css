@@ -1,0 +1,69 @@
+/* Reset CSS */
+
+/* Box-sizing reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Margin and padding reset */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+dl,
+li,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr {
+    margin: 0;
+    padding: 0;
+}
+
+/* Typography reset */
+body,
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: sans-serif;
+}
+
+/* Other resets */
+ul,
+ol {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* End Reset CSS */
